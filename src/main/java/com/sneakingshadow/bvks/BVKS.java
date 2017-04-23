@@ -20,7 +20,7 @@ public class BVKS {
     public static IProxy proxy;
     
     @Mod.Instance(Reference.MOD_ID)
-	public static BVKS instance;
+    public static BVKS instance;
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
