@@ -6,6 +6,7 @@ import com.sneakingshadow.bvks.item.ModItems;
 import com.sneakingshadow.bvks.proxy.IProxy;
 import com.sneakingshadow.bvks.reference.Reference;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -17,6 +18,9 @@ public class BVKS {
 
     @SidedProxy(serverSide = Reference.SERVER_PROXY_CLASS, clientSide = Reference.CLIENT_PROXY_CLASS)
     public static IProxy proxy;
+    
+    @Mod.Instance(Reference.MOD_ID)
+	public static BVKS instance;
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
