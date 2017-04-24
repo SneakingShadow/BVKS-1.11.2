@@ -1,16 +1,10 @@
 package com.sneakingshadow.bvks.creativetabs;
 
-import com.sneakingshadow.bvks.BVKS;
 import com.sneakingshadow.bvks.reference.Reference;
-import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.NonNullList;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class CreativeTabsBVKS {
 

@@ -3,12 +3,11 @@ package com.sneakingshadow.bvks.item;
 import com.sneakingshadow.bvks.reference.Reference;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-
 import java.util.ArrayList;
 
 public class ItemBVKS extends Item {
 
-    ArrayList<CreativeTabs> creativeTabs = new ArrayList<CreativeTabs>();
+    public ArrayList<CreativeTabs> creativeTabs = new ArrayList<CreativeTabs>();
 
     public ItemBVKS(String name)
     {
