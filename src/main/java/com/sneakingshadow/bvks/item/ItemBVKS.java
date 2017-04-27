@@ -11,7 +11,7 @@ public class ItemBVKS extends Item {
 
     public ItemBVKS(String name)
     {
-        setUnlocalizedName(name);
+        setUnlocalizedName(Reference.getResourceName(name));
         setRegistryName(Reference.getResourceLocation(name));
     }
 
@@ -43,7 +43,8 @@ public class ItemBVKS extends Item {
      */
     public CreativeTabs[] getCreativeTabs()
     {
-        return creativeTabs.isEmpty() ? new CreativeTabs[]{ getCreativeTab() } : (CreativeTabs[]) creativeTabs.toArray();
+        return (creativeTabs.isEmpty() ? new CreativeTabs[]{ getCreativeTab() }
+        : creativeTabs.toArray(new CreativeTabs[]{ }));
     }
 
 }

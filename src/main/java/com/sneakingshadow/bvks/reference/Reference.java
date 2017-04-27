@@ -27,4 +27,8 @@ public class Reference
     public static ResourceLocation getResourceLocation(String location) {
         return new ResourceLocation(MOD_ID, location);
     }
+
+    public static String getResourceName(String location) {
+        return RESOURCE_PREFIX + location;
+    }
 }
